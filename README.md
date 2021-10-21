@@ -1,12 +1,20 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
+
+## Using environment variables in `.env` 
+
+### `REACT_APP_PROJECT_API_PREFIX = "http"`
+### `REACT_APP_PROJECT_API_DOMAIN = "localhost:3000"`
+### `REACT_APP_SPOTIFY_CLIENT_ID = "<YOUR_CLIENT_KEY>"`
+
+### `REACT_APP_SPOTIFY_API_PREFIX = "https"`
+### `REACT_APP_SPOTIFY_API_VERSION= "v1"`
+### `REACT_APP_SPOTIFY_API_DOMAIN = "api.spotify.com"`
+### `REACT_APP_SPOTIFY_AUTHORIZE_DOMAIN= "accounts.spotify.com/authorize"`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
