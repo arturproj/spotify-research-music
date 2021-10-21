@@ -1,0 +1,21 @@
+.home-container {
+  height: 100vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.home-container-grid-row {
+  height: 100%;
+}
+
+.home-container-grid-row-col {
+  text-align: center !important;
+}
+
+.logo-brand {
+  height: 60px;
+  width: auto;
+  margin-bottom: 12px;
+}

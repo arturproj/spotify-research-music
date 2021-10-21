@@ -14,15 +14,12 @@ import {
   SET_PAGES_ALBUMS,
   SET_PAGES_ARTISTS,
   SET_PAGES_PLAYLISTS,
-  RESET_COLECTIONS,
 } from "./reducers/actionTypes";
 
 import userReducer from "./reducers/user";
 import albumReducer from "./reducers/album";
 import artistReducer from "./reducers/artist";
 import playlistReducer from "./reducers/playlist";
-
-import { get } from "../helpers/spotify.api";
 
 export function userMapStateToProps(state) {
   return { user: state.userReducer };

@@ -1,5 +1,4 @@
 import axios from "axios";
-import queryString from "query-string";
 import { handleAuthRequirements, validateExpired } from "./functionals";
 
 export const setAuthHeader = () => {
@@ -41,16 +40,8 @@ export async function getPagination(url) {
 }
 
 export const callCategories = (query) =>
-  query === ""
-    ? Promise.all([])
-    : Promise.all([
-        get(
-          `https://api.spotify.com/v1/search?country=FR&query=${query}&type=artist`
-        ),
-        get(
-          `https://api.spotify.com/v1/search?country=FR&query=${query}&type=album`
-        ),
-        get(
-          `https://api.spotify.com/v1/search?country=FR&query=${query}&type=playlist`
-        ),
-      ]);
+  Promise.all([
+    get(`https://api.spotify.com/v1/search?query=${query}&type=artist`),
+    get(`https://api.spotify.com/v1/search?query=${query}&type=album`),
+    get(`https://api.spotify.com/v1/search?query=${query}&type=playlist`),
+  ]);

@@ -5,24 +5,31 @@ import { setExpires } from "../helpers/functionals";
 import { CLIENT_APP_URL } from "../helpers/spotifyUrls";
 
 export default function SpotifyRedirect(props) {
-  const location = useLocation();
+  /**
+   *
+   */
   const readUserState = {
-    ...queryString.parse(location.hash),
+    ...queryString.parse(useLocation().hash),
   };
-
-  // console.log(readUserState);
-
-  if (!readUserState.hasOwnProperty("access_token")) {
-    // console.log("not allowed");
-  } else {
+  /**
+   *
+   */
+  if (readUserState.hasOwnProperty("access_token")) {
+    //
     readUserState.expires_in = setExpires(Number(readUserState.expires_in));
-
+    //
     Object.keys(readUserState).map(function (key, index) {
-      localStorage.setItem(key, readUserState[key]);
-      return;
+      return localStorage.setItem(key, readUserState[key]);
     });
+    /**
+     *
+     */
+    return window.location.replace("/");
+  } else {
+    console.log("not allowed");
+    /**
+     *
+     */
+    return window.location.replace("/?error=401");
   }
-
-  return (window.location = CLIENT_APP_URL);
-  return "redirect";
 }

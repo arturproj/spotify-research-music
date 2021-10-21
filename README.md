@@ -1,13 +1,13 @@
 
 
 
-![Gif demo application](https://github.com/arturproj/spotify-research-music/blob/master/demo_picture_spotiapp.gif)
+![Gif demo application](https://github.com/arturproj/spotify-research-music/blob/master/public/demo_picture_spotiapp.gif)
 
 ## Using environment variables in `.env` 
 
 ### `REACT_APP_PROJECT_API_PREFIX = "http"`
-### `REACT_APP_PROJECT_API_DOMAIN = "localhost:3000"`
-### `REACT_APP_SPOTIFY_CLIENT_ID = "<YOUR_CLIENT_KEY>"`
+### `REACT_APP_PROJECT_API_DOMAIN = "<YOUR_HOST_NAME>"` example `localhost:3000`
+### `REACT_APP_SPOTIFY_CLIENT_ID = "<YOUR_CLIENT_KEY>"` [source](https://developer.spotify.com/documentation/general/guides/authorization/) 
 
 ### `REACT_APP_SPOTIFY_API_PREFIX = "https"`
 ### `REACT_APP_SPOTIFY_API_VERSION= "v1"`
