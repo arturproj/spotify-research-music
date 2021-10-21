@@ -1,7 +1,7 @@
 
 
 
-![Gif demo application](./demo)
+![Gif demo application](https://github.com/arturproj/spotify-research-music/blob/master/demo_picture_spotiapp.gif)
 
 ## Using environment variables in `.env` 
 
