@@ -1,9 +1,7 @@
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+![Gif demo application](./demo)
 
 ## Using environment variables in `.env` 
 
@@ -15,6 +13,13 @@ In the project directory, you can run:
 ### `REACT_APP_SPOTIFY_API_VERSION= "v1"`
 ### `REACT_APP_SPOTIFY_API_DOMAIN = "api.spotify.com"`
 ### `REACT_APP_SPOTIFY_AUTHORIZE_DOMAIN= "accounts.spotify.com/authorize"`
+
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
