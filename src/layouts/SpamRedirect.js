@@ -2,7 +2,6 @@ import { useLocation } from "react-router-dom";
 
 import queryString from "query-string";
 import { setExpires } from "../helpers/functionals";
-import { CLIENT_APP_URL } from "../helpers/spotifyUrls";
 
 export default function SpotifyRedirect(props) {
   /**

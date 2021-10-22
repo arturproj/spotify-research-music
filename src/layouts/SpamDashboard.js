@@ -103,6 +103,9 @@ class SpotifyDashboard extends React.Component {
       case "next":
         await this.callTogglePagination(state.nextPage);
         break;
+      default:
+        console.log("action undefined");
+        break;
     }
     /**
      *
